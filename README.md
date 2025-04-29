@@ -32,8 +32,8 @@ This game will be developed using: HTML, JavaScript and CSS.
 # Credits
 
 Images: [ifunny](https://ifunny.co/picture/dutch-has-a-plan-dutch-has-a-plan-chapter-chapter-1bo33JZf8)
+[youtube](https://www.youtube.com/watch?v=_XYO_Q2eIrg)
 
-Markdown Guide: [ia.net](https://stackoverflow.com/)
 
 
 
