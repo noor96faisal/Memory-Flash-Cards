@@ -4,7 +4,9 @@ const cardValues = [
   { name: 'Dutch', path: './images/dutch.jpg' },
   { name: 'Hosea', path: './images/hosea.jpg' },
   { name: 'Sadie', path: './images/sadie.jpg' },
-  { name: 'Micah', path: './images/micah.jpg' }
+  { name: 'Micah', path: './images/micah.jpg' },
+  { name: 'Lenny', path: './images/lenny.jpg' },
+  { name: 'Charles', path: './images/charles.jpg' }
 ]
 let cards = [...cardValues, ...cardValues]
 
