@@ -5,8 +5,6 @@ body {
   color: #000000;
   background-image: url(https://wallpapercave.com/wp/wp2614327.jpg);
   background-size: cover;
-  
-
 }
 .game-board {
   display: grid;
@@ -26,25 +24,30 @@ body {
   border-radius: 8px;
   perspective: 1000px;
 
-  transition: transform 0.2ms ease-in-out;} 
-  /* I searched about the transition and found a reference in stack Overflow (https://stackoverflow.com/questions/27904886/can-i-apply-a-css-transition-to-the-overflow-property) 
+  transition: transform 0.2ms ease-in-out;
+}
+/* I searched about the transition and found a reference in stack Overflow (https://stackoverflow.com/questions/27904886/can-i-apply-a-css-transition-to-the-overflow-property) 
   
   AND 
   
   (https://www.w3schools.com/css/css3_transitions.asp) */
 
-  .card img{
-    
-width: 18vh;
-height: 21vh;
-border-radius: 8px;
-
-  }
-
+.card img {
+  width: 18vh;
+  height: 21vh;
+  border-radius: 8px;
+}
 
 .card.flipped {
   background-color: #000000;
   color: #f00000;
-  transform: rotate(360deg);}
-  /* I searched this in the internet, because cards cards were backwards.
-
+  transform: rotate(360deg);
+}
+/* I searched this in the internet, because cards cards were backwards.*/
+button {
+  color: #f00000;
+  background-color: #000000;
+  font-family: fantasy;
+  border: #f00000;
+  width: 20px;
+}
