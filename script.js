@@ -1,10 +1,10 @@
 const cardValues = [
-  { name: 'Arthur', path: './images/arthur.webp' },
+  { name: 'Arthur', path: './images/arthur.jpg' },
   { name: 'John', path: './images/john.jpg' },
-  { name: 'Dutch', path: './images/dutch.webp' },
-  { name: 'Hosea', path: './images/hosea.webp' },
-  { name: 'Sadie', path: './images/sadie.webp' },
-  { name: 'Micah', path: './images/micah.webp' }
+  { name: 'Dutch', path: './images/dutch.jpg' },
+  { name: 'Hosea', path: './images/hosea.jpg' },
+  { name: 'Sadie', path: './images/sadie.jpg' },
+  { name: 'Micah', path: './images/micah.jpg' }
 ]
 let cards = [...cardValues, ...cardValues]
 
