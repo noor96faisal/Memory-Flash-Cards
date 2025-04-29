@@ -72,3 +72,8 @@ allCards.forEach((card) => {
     }
   })
 })
+
+document.getElementById('restartButton').addEventListener('click', () => {
+  location.reload() // Restart the game
+})
+//I took references from Events lesson in Github and from Chatgpt
