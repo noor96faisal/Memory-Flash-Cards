@@ -1,4 +1,4 @@
-const nameValues = [
+const cardValues = [
   { name: 'Arthur', path: './images/arthur.webp' },
   { name: 'John', path: './images/john.webp' },
   { name: 'Dutch', path: './images/dutch.webp' },
@@ -6,7 +6,7 @@ const nameValues = [
   { name: 'Sadie', path: './images/sadie.webp' },
   { name: 'Micah', path: './images/micah.webp' }
 ]
-let cards = [...nameValues, ...nameValues]
+let cards = [...cardValues, ...cardValues]
 
 cards.sort(() => 0.5 - Math.random())
 // I googled this and found an answer in a website "I DID NOT COPY THE CODE just needed a hint or sample" (https://www.geeksforgeeks.org/javascript-program-to-shuffle-deck-of-cards/)
@@ -15,8 +15,15 @@ const board = document.getElementById('gameBoard')
 for (let i = 0; i < cards.length; i++) {
   const card = document.createElement('div') //I took a reference from previous DOM lesson in github (https://github.com/SEB-5-Bahrain/u1_lesson_DOM)
   card.className = 'card'
-  card.name = cards[i]
-  card.innerText = ''
+  card.name = cards[i].name
+
+  const img = document.createElement('img')
+  img.src = cards[i].path
+  img.alt = cards[i].name
+  img.classList.add('card-image')
+  img.style.display = 'none'
+
+  card.appendChild(img)
   board.appendChild(card)
 }
 
