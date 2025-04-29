@@ -1,6 +1,6 @@
 const cardValues = [
   { name: 'Arthur', path: './images/arthur.webp' },
-  { name: 'John', path: './images/john.webp' },
+  { name: 'John', path: './images/john.jpg' },
   { name: 'Dutch', path: './images/dutch.webp' },
   { name: 'Hosea', path: './images/hosea.webp' },
   { name: 'Sadie', path: './images/sadie.webp' },
@@ -13,7 +13,7 @@ cards.sort(() => 0.5 - Math.random())
 const board = document.getElementById('gameBoard')
 
 for (let i = 0; i < cards.length; i++) {
-  const card = document.createElement('div') //I took a reference from previous DOM lesson in github (https://github.com/SEB-5-Bahrain/u1_lesson_DOM)
+  const card = document.createElement('div')
   card.className = 'card'
   card.name = cards[i].name
 
@@ -21,11 +21,12 @@ for (let i = 0; i < cards.length; i++) {
   img.src = cards[i].path
   img.alt = cards[i].name
   img.classList.add('card-image')
-  img.style.display = 'none'
+  img.style.display = 'none' // Initially hidden
 
   card.appendChild(img)
   board.appendChild(card)
 }
+//I took a reference from previous DOM lesson in github (https://github.com/SEB-5-Bahrain/u1_lesson_DOM)
 
 let firstCard = null
 let secondCard = null
@@ -39,7 +40,8 @@ allCards.forEach((card) => {
     if (card === firstCard) return
 
     card.classList.add('flipped')
-    card.innerText = card.name
+
+    card.querySelector('img').style.display = 'block'
 
     if (firstCard === null) {
       firstCard = card
@@ -57,8 +59,9 @@ allCards.forEach((card) => {
 
           firstCard.classList.remove('flipped')
           secondCard.classList.remove('flipped')
-          firstCard.innerText = ''
-          secondCard.innerText = ''
+
+          firstCard.querySelector('img').style.display = 'none'
+          secondCard.querySelector('img').style.display = 'none'
           firstCard = null
           secondCard = null
           lock = false

@@ -26,8 +26,22 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  transition: transform 0.3s;
-}
+
+   transition: transform 0.3s;} 
+  /* I searched about the transition and found a reference in stack Overflow (https://stackoverflow.com/questions/27904886/can-i-apply-a-css-transition-to-the-overflow-property) 
+  
+  AND 
+  
+  (https://www.w3schools.com/css/css3_transitions.asp) */
+
+  .card img{
+    
+width: 20vh;
+height: 26vh;
+
+  }
+
+
 .card.flipped {
   background-color: #000000;
   color: #f00000;
