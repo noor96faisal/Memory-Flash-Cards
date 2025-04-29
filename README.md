@@ -24,8 +24,11 @@ Memory flash game is widely known for a very long time, it is one of the classic
 )
 ---
 
+---
+## Development
+This game will be developed using: HTML, JavaScript and CSS.
 
-
+---
 # Credits
 
 Images: [ifunny](https://ifunny.co/picture/dutch-has-a-plan-dutch-has-a-plan-chapter-chapter-1bo33JZf8)
@@ -43,14 +46,8 @@ Markdown Guide: [ia.net](https://stackoverflow.com/)
 
 
 
-# Memory-Flash-Cards
-## **Overview**
-Memory flash game is widely known for a very long time, it is one of the classic game in the internet. In this project you will be able to exercise you brain and memory.
----
 
----
-## Development
-This game will be developed using: HTML, JavaScript and CSS.
+
 
 
 
