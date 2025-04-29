@@ -11,13 +11,13 @@ body {
 .game-board {
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  gap: 15%;
-  row-gap: 5%;
+  gap: 20%;
+  row-gap: 1%;
   justify-content: center;
 }
 .card {
-  width: 20vh;
-  height: 26vh;
+  width: 18vh;
+  height: 21vh;
   background-color: #860000;
   color: white;
   display: flex;
