@@ -25,6 +25,7 @@ body {
   align-items: center;
   border-radius: 8px;
   perspective: 1000px;
+
   transition: transform 0.2ms ease-in-out;} 
   /* I searched about the transition and found a reference in stack Overflow (https://stackoverflow.com/questions/27904886/can-i-apply-a-css-transition-to-the-overflow-property) 
   
@@ -34,8 +35,8 @@ body {
 
   .card img{
     
-width: 20vh;
-height: 26vh;
+width: 18vh;
+height: 21vh;
 border-radius: 8px;
 
   }
