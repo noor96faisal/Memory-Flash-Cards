@@ -1,0 +1,37 @@
+body {
+  background-color: #f0a3e9;
+  text-align: center;
+  font-size: 25px;
+  font-family: fantasy;
+  color: #000000;
+  background-image: url(https://wallpapercave.com/wp/wp2614327.jpg);
+  background-size: cover;
+  
+
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15%;
+  row-gap: 5%;
+  justify-content: center;
+}
+.card {
+  width: 20vh;
+  height: 26vh;
+  background-color: #860000;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.card.flipped {
+  background-color: #000000;
+  color: #f00000;
+  transform: reverse (180deg);
+  transform: reverse (180deg);}
+  /* I searched this in the internet, because cards cards were backwards.
+
