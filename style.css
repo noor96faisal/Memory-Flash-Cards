@@ -26,8 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-
-   transition: transform 0.3s;} 
+  perspective: 1000px;
+  transition: transform 2ms ease-in-out;} 
   /* I searched about the transition and found a reference in stack Overflow (https://stackoverflow.com/questions/27904886/can-i-apply-a-css-transition-to-the-overflow-property) 
   
   AND 
@@ -38,14 +38,15 @@ body {
     
 width: 20vh;
 height: 26vh;
-
+border-radius: 8px;
+transition: transform 0.5s ease; 
   }
 
 
 .card.flipped {
   background-color: #000000;
   color: #f00000;
-  transform: reverse (180deg);
-  transform: reverse (180deg);}
+  transform: rotate (360deg);
+  transform: rotate (360deg);}
   /* I searched this in the internet, because cards cards were backwards.
 
