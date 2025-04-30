@@ -21,9 +21,9 @@ for (let i = 0; i < cards.length; i++) {
 
   const img = document.createElement('img')
   img.src = cards[i].path
-  img.alt = cards[i].name
+  img.alt = cards[i].name //I looked at samples in Overflow and geeksforgeeks.
   img.classList.add('card-image')
-  img.style.display = 'none' // Initially hidden
+  img.style.display = 'none'
 
   card.appendChild(img)
   board.appendChild(card)
@@ -74,6 +74,6 @@ allCards.forEach((card) => {
 })
 
 document.getElementById('restartButton').addEventListener('click', () => {
-  location.reload() // Restart the game
+  location.reload()
 })
 //I took references from Events lesson in Github and from Chatgpt
